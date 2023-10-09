@@ -1,0 +1,17 @@
+{
+  "name": "transcribe-node",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.8.4",
+    "jest": "^29.7.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "audio-bash-utils": "^1.0.0",
+    "dotenv": "^16.3.1",
+    "transcriptor-client": "^1.0.0"
+  }
+}
