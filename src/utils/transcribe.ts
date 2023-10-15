@@ -24,7 +24,7 @@ export const transcribe = async (buffer: Buffer) => {
 
   const { transcription } = await transcribeWhisper({
     filePath: tempWavFile,
-    modelPath: "/app/whisper.cpp/models/ggml-base.bin",
+    modelPath: "/app/ggml-base.bin",
   });
 
   await execPromise(`rm ${tempFile} ${tempWavFile}`);

@@ -7,5 +7,5 @@ make
 cp main /bin/whisper-cpp
 chmod +x /bin/whisper-cpp
 
-cd models
-bash download-coreml-model.sh base
+# bash models/download-coreml-model.sh base
+# cp /app/whisper.cpp/models/ggml-base.bin /etc/ggml-base.bin
