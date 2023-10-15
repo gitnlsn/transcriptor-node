@@ -11,6 +11,7 @@ RUN mv /usr/bin/wget /usr/bin/wget2
 RUN sh scripts/install-whisper-cpp.sh
 RUN mv /usr/bin/wget2 /usr/bin/wget
 
+RUN yarn
 RUN npx tsc
 
 CMD node dist/main.js
