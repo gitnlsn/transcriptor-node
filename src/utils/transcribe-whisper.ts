@@ -17,7 +17,7 @@ export const transcribeWhisper = async ({
   const outputFilename = formatTranscriptionOutput({ filePath });
 
   await execPromise(
-    `/usr/bin/whisper-cpp -f ${filePath} -m ${modelPath} -l pt -bo 10 -p 2 -oj -of ${outputFilename}`
+    `whisper-cpp -f ${filePath} -m ${modelPath} -l pt -bo 10 -p 2 -oj -of ${outputFilename}`
   );
 
   const transcription = await execPromise(
