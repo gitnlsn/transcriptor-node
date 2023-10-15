@@ -12,7 +12,7 @@ export class HttpServer {
     this.server = express();
     this.server.use(
       express.json({
-        limit: "512kb",
+        limit: "1024kb",
       })
     );
 
